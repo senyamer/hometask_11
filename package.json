@@ -1,0 +1,28 @@
+{
+  "name": "hometask_11",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha *.spec.js -timeout 50000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/senyamer/hometask_11.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/senyamer/hometask_11/issues"
+  },
+  "homepage": "https://github.com/senyamer/hometask_11#readme",
+  "dependencies": {
+    "mocha": "^9.0.0",
+    "playwright": "^1.12.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/register": "^7.14.5"
+  }
+}
