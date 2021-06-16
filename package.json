@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha *.spec.js -timeout 50000"
+    "test": "mocha *.spec.js -timeout 50000 --require @babel/register"
   },
   "repository": {
     "type": "git",
@@ -18,11 +18,14 @@
   },
   "homepage": "https://github.com/senyamer/hometask_11#readme",
   "dependencies": {
+    "@babel/cli": "^7.14.5",
+    "@babel/core": "^7.14.6",
+    "@babel/node": "^7.14.5",
+    "@babel/preset-env": "^7.14.5",
+    "@babel/register": "^7.14.5",
+    "chai": "^4.3.4",
+    "faker": "^5.5.3",
     "mocha": "^9.0.0",
     "playwright": "^1.12.2"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.14.6",
-    "@babel/register": "^7.14.5"
   }
 }
