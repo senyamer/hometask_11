@@ -10,8 +10,8 @@ async function goto() {
 };
 async function run() {
     browser = await playwright.chromium.launch({
-        headless: false,
-        slowMo: 500,
+        headless: true,
+        // slowMo: 500,
     });
     context = await browser.newContext();
     page = await context.newPage();
@@ -20,5 +20,12 @@ async function stop() {
     await page.close();
     await browser.close();
 };
+async function login() {
+    await page.click('#uid');
+    await page.fill('#uid', "admin");
+    await page.click('#passw');
+    await page.fill('#passw', "admin");
+    await page.click('//tbody/tr[3]/td[2]/input[1]');
+};
 
-export {goto, run, stop};
+export {goto, run, stop, login};
